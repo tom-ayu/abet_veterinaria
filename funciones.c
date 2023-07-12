@@ -108,13 +108,13 @@ void mFactura(char *opc1, char *opc2, char *opc3, char *opc4, char *opc5, int *s
 
     if (*cont==0)
     {
-        facturas=fopen("factura.txt", "w");
+        facturas=fopen("facturas.txt", "w");
         fprintf(facturas,"\n");
         fclose(facturas);
         *cont+=1;
     }
 
-    facturas=fopen("factura.txt","a");
+    facturas=fopen("facturas.txt","a");
 
     fprintf(facturas,"------------------------FACTURA-----------------------\n");
     fprintf(facturas,"Nombre del Dueño: %s\n",opc5);
