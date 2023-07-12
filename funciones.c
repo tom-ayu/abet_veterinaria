@@ -109,14 +109,14 @@ void mFactura(char *opc1, char *opc2, char *opc3, char *opc4, char *opc5, int *s
     if (*cont==0)
     {
         facturas=fopen("facturas.txt", "w");
-        fprintf(facturas,"\n");
+        fprintf(facturas," ");
         fclose(facturas);
         *cont+=1;
     }
 
     facturas=fopen("facturas.txt","a");
 
-    fprintf(facturas,"------------------------FACTURA-----------------------\n");
+    fprintf(facturas,"\n------------------------FACTURA-----------------------\n");
     fprintf(facturas,"Nombre del Dueño: %s\n",opc5);
     fprintf(facturas,"Nombre de la Mascota: %s\n",opc2);
     fprintf(facturas,"ID de la Mascota: %s\n",opc1);
